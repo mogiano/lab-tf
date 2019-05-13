@@ -1,15 +1,15 @@
 OBJETIVOS
 
-    Provisionar uma instância EC2 na AWS
+    Provisionar uma instância EC2 na AWS - usando t2.micro
     Criar as TAGS para a instância
     Associar Chave PEM
     Regras Security Group INBOUND, portas 80 e 22
     Regra de Security Group OUTBOUND para a instância ter acesso à internet
-    Apresentar o IP Publico
-
-    Execução de UserData com script de instalação e start do Nginx
-    Instalar e Atualizar o Servidor
+    Execução de UserData com script de instalação 
+    Atualizar o S.O
     Instalar o NGINX
+    Instalar o GIT
+    Instalar o Docker Compose 
 
 
 SEGURANÇA E ACESSOS
@@ -34,4 +34,7 @@ TERRAFORM
             Security group que será criado e adicionado na instância
 
         vars.tf
-            O arquivo vars, é onde podemos definir as variáveis principais que serão utilizadas
+           Onde define as variáveis que serão utilizadas
+
+        nginx.sh
+            Realiza a instalação dos pacotes e modulos

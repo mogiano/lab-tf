@@ -1,5 +1,5 @@
-resource "aws_security_group" "SG_AmazonLinuxAMI" {
-  name        = "SG_AmazonLinuxAMI"
+resource "aws_security_group" "SG_LabIaC" {
+  name        = "SG_LabIaC"
   description = "Inbound 22/80 e all out"
 
   ingress {
@@ -22,4 +22,8 @@ resource "aws_security_group" "SG_AmazonLinuxAMI" {
     protocol        = "-1"
     cidr_blocks     = ["0.0.0.0/0"]
   }
+
+  tags {
+    Name          = "SG_LabIaC"
+    }
 }
