@@ -9,7 +9,8 @@ OBJETIVOS
     Atualizar o S.O
     Instalar o NGINX
     Instalar o GIT
-    Instalar o Docker Compose 
+    Instalar o Docker Compose
+    Utilização de variaveis  
 
 
 SEGURANÇA E ACESSOS
