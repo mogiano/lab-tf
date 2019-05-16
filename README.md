@@ -1,3 +1,16 @@
+### Infraestrutura como Código - Infra Ágil
+
+Automação de Codigo com foco em Infraestrutura - Levando Agilidade para criação, atualização e excluir toda a Infraestrutura
+
+- Infra em Cloud AWS
+    |_Sistema Operacional
+    |_Firewall
+    |_Network
+    |_DNS
+    |_Volumes Logicos (HD, SSD, EBS)
+
+
+
 OBJETIVOS
 
     Provisionar uma instância EC2 na AWS - usando t2.micro
@@ -11,6 +24,7 @@ OBJETIVOS
     Instalar o GIT
     Instalar o Docker Compose
     Utilização de variaveis  
+    Realiza o clone do repo DockeCompose - git clone
 
 
 SEGURANÇA E ACESSOS
@@ -25,7 +39,7 @@ SEGURANÇA E ACESSOS
 TERRAFORM
     Principais arquivos TF
 
-        provider.tf
+        providers.tf
             Informações de conexão com a AWS
 
         main.tf
@@ -39,3 +53,6 @@ TERRAFORM
 
         nginx.sh
             Realiza a instalação dos pacotes e modulos
+
+        outputs
+            Exiber o IP Public, DNS e KEY
